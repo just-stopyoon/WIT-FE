@@ -40,7 +40,7 @@ export default function NameScreen() {
       <TouchableOpacity
         style={[styles.nextButton, { backgroundColor: name.length > 0 ? '#5638E3' : '#C4C4C4' }]}
         disabled={name.length === 0}
-        onPress={() => navigation.navigate('NextScreen')} // 다음 화면으로 이동
+        onPress={() => navigation.navigate('Birth', {name})} // 다음 화면으로 이동
       >
         <Text style={styles.nextButtonText}>다음</Text>
       </TouchableOpacity>

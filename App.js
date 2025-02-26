@@ -9,6 +9,7 @@ import { createStackNavigator } from '@react-navigation/stack'; // ✅ Stack Nav
 import { NavigationContainer } from '@react-navigation/native'; // ✅ NavigationContainer 추가
 import { styles } from './AppStyles';
 import NameScreen from './Name'; // ✅ Name.js 파일 import
+import BirthScreen from './Birth';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -126,6 +127,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Name" component={NameScreen} />
+        <Stack.Screen name="Birth" component={BirthScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -32,8 +32,13 @@ export const styles = StyleSheet.create({
 
   /* 질문 텍스트 */
   questionContainer: {
-    marginBottom: 90, // 입력 필드와 간격 확보
+    marginBottom: 100, // 입력 필드와 간격 확보
   },
+
+  titleText: {
+    color:'#4832D5',
+  },
+  
   questionText: {
     fontSize: 28,
     fontWeight: 'bold',
@@ -59,6 +64,25 @@ export const styles = StyleSheet.create({
   characterCount: {
     fontSize: 16,
     color: '#C4C4C4',
+  },
+
+  /* ✅ 추가된 생년월일 선택 스타일 */
+  dateInput: {
+    backgroundColor: '#fff',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#C4C4C4',
+    width: '80%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
+  dateText: {
+    fontSize: 20,
+    color: '#333',
+    fontFamily: 'Pretendard-Medium',
   },
 
   /* 다음 버튼 */
